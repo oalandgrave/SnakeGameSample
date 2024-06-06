@@ -69,16 +69,16 @@ export class GameComponent implements OnInit {
     let head = Object.assign({}, this.snake[0]); // copy head object.
   switch (this.defaultDirection) {
     case 'right':
-      head.x += 1;
+      head.x = (head.x + 1) % this.rows;
       break;
     case 'left':
-      head.x -= 1;
+      head.x =  (head.x - 1 + this.rows) % this.rows;
       break;
     case 'up':
-      head.y -= 1;
+      head.y = (head.y - 1 + this.cols) % this.cols;;
       break;
     case 'down':
-      head.y += 1;
+      head.y = (head.y + 1) % this.cols;
       break;
   }
   if (this.checkCollision(head)) {
