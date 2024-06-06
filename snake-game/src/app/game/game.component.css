@@ -1,0 +1,25 @@
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  
+  .game-board div {
+    width: 20px;
+    height: 20px;
+  }
+
+  .game-board {
+    border: 1px solid #ccc;
+    
+  }
+  
+  .snake-body {
+    background: #000;
+  }
+  
+  .apple {
+    background: #f00;
+  }

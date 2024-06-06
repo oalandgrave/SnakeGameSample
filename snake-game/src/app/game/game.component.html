@@ -1,0 +1,7 @@
+<h1>High Score: {{ highScore }}</h1>
+<h1>Score: {{ score }}</h1>
+<div class="game-board">
+    <div *ngFor="let row of [].constructor(rows); let i = index">
+      <div *ngFor="let col of [].constructor(cols); let j = index" [ngClass]="{'snake-body': isSnake(i, j), 'apple': isApple(i, j)}"></div>
+    </div>
+</div>
