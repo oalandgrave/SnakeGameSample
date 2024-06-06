@@ -26,6 +26,10 @@ Use the arrow keys to control the direction of the snake. Try to eat as many app
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## Url to test
+
+https://snake-angular-sample.web.app
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
